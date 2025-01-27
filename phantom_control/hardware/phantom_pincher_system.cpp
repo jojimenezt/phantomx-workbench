@@ -250,7 +250,7 @@ CallbackReturn PhantomPincherSystem::on_configure(const rclcpp_lifecycle::State 
       
 
         joint_commands_[POSITION_INTERFACE_INDEX][i] = byte2rad(present_position); 
-        RCLCPP_INFO(node_ -> get_logger(), "%f",  byte2rad(present_position)); 
+        // RCLCPP_INFO(node_ -> get_logger(), "%f",  byte2rad(present_position)); 
         
 }
 
@@ -334,7 +334,7 @@ hardware_interface::return_type PhantomPincherSystem::read(const rclcpp::Time& /
 
       joint_states_[POSITION_INTERFACE_INDEX][i] = current_angle;
 
-        RCLCPP_INFO(node_ -> get_logger(), "  - [ID: %d] %f (deg) / %f (rad)", i + 1, current_angle,current_angle * 3.14f / 180.0f ); 
+        // RCLCPP_INFO(node_ -> get_logger(), "  - [ID: %d] %f (deg) / %f (rad)", i + 1, current_angle,current_angle * 3.14f / 180.0f ); 
 
   }
 
@@ -403,7 +403,7 @@ hardware_interface::return_type PhantomPincherSystem::write(const rclcpp::Time& 
   for(int i = 0; i < joint_commands_[POSITION_INTERFACE_INDEX].size(); i++){
     float cmd = joint_commands_[POSITION_INTERFACE_INDEX][i] * (180.0f / 3.14f) * 1.0f / 0.087891f; 
     
-    RCLCPP_INFO(node_ -> get_logger(), "[ID %d] to %f -> %f", i + 1, cmd, joint_commands_[POSITION_INTERFACE_INDEX][i]); 
+    // RCLCPP_INFO(node_ -> get_logger(), "[ID %d] to %f -> %f", i + 1, cmd, joint_commands_[POSITION_INTERFACE_INDEX][i]); 
     
     if(true)
      dxl_comm_result =

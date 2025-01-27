@@ -3,8 +3,7 @@ Panels:
     Help Height: 78
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /TF1/Frames1
+      Expanded: ~
       Splitter Ratio: 0.5
     Tree Height: 494
   - Class: rviz_common/Selection
@@ -52,7 +51,7 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-      Marker Scale: 1
+      Marker Scale: 0.30000001192092896
       Name: TF
       Show Arrows: false
       Show Axes: true
@@ -194,7 +193,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.7270349264144897
+      Distance: 0.7090898156166077
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -209,10 +208,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.14539837837219238
+      Pitch: 0.3702036142349243
       Target Frame: arm_base_link
       Value: Orbit (rviz)
-      Yaw: 0.9153984785079956
+      Yaw: 0.885399580001831
     Saved:
       - Class: rviz_default_plugins/Orbit
         Distance: 0.938686728477478
