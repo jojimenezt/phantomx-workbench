@@ -7,6 +7,9 @@ ROS es un meta sistema operativo de código abierto para tu robots. Proporciona 
 El "grafo" de ejecución de ROS es una red de procesos punto a punto (potencialmente distribuidos entre varias máquinas) que están débilmente acoplados mediante la infraestructura de comunicación de ROS. ROS implementa varios estilos de comunicación, incluidos la comunicación síncrona tipo RPC a través de servicios, la transmisión asíncrona de datos mediante tópicos y el almacenamiento de datos en un Servidor de Parámetros. Estos conceptos se explican con mayor detalle en nuestra Visión General Conceptual.
 En la actualidad existen dos versiones de ROS. Una  es conoccida como ROS1 o simplemente ROS y la segunda version es conocida como ROS2. 
 
+### Clientes de acceso a ROS 
+C++, Python, JS, Rust, Julia como accceder
+
 ## Sobre ROS1
 
 ROS 1 (Robot Operating System) facilita la creación de sistemas complejos. Su arquitectura se basa en un grafo de ejecución donde los nodos (procesos independientes) se comunican mediante tópicos (publicación-suscripción) o servicios (solicitud-respuesta). El ROS Master coordina estas interacciones, gestionando nombres, registros y conexiones entre nodos. Además, incluye un servidor de parámetros para almacenar configuraciones globales. Los paquetes organizan los recursos del sistema, y las herramientas como roscore, rosrun y roslaunch simplifican la ejecución. Aunque ROS 1 es potente y flexible, depende del Master y no está optimizado para aplicaciones en tiempo real, lo que ha llevado a su evolución hacia ROS2.
