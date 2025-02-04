@@ -127,7 +127,7 @@ realizar los siguientes pasos:
 1. Preparar el sistema para usar los canales correctos
  
 ```sh
-conda create -n humbel python=3.11
+conda create -n humble python=3.11
 conda activate humble
 ```
 2. Verificar que se encuentre dentro del ambiente instalado mamba y conda con el siguiente comando
